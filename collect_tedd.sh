@@ -11,8 +11,8 @@ for i in *.stdout ;
 do
     # model name
     j=$(echo $i | cut -d '_' -f 2) ;
-    # grab and massage the answer, replace techniques by TEDD2020
-    (echo $j StateSpace ; cat $i | grep STATE_SPACE | cut -d ' ' -f 1-4 | while read line; do echo ${line}" TEDD2020"; done ;) > $j-SS.out ;
+    # grab and massage the answer, replace techniques by TEDD2023
+    (echo $j StateSpace ; cat $i | grep STATE_SPACE | cut -d ' ' -f 1-4 | while read line; do echo ${line}" TEDD2023"; done ;) > $j-SS.out ;
 done ;
 
 # only keep files with 5 lines = all results
