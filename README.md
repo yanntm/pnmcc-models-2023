@@ -36,10 +36,10 @@ FORMULA ARMCacheCoherence-PT-none-ReachabilityFireability-03 FALSE TECHNIQUES OR
 The files produced by this project are created using the official archives taken from the [MCC website](https://mcc.lip6.fr/archives/), we basically decompress the virtual machine image to extract the model + formula files, 
 and use some perl tricks on the "raw_results.csv" to create the oracle files. All the files building this oracle live in this repository and can be inspected.
 
-The traces for StateSpace examination are built using all complete verdicts from 2020 gold medalist Tedd, because the "raw_results.csv" cannot be used as large numbers (e.g. state count) are shortened.
+The traces for StateSpace examination are built using all complete verdicts from 2023 gold medalist Tedd, because the "raw_results.csv" cannot be used as large numbers (e.g. state count) are shortened.
 We used the "collect_tedd.sh" script that lives in this repo to build these oracles, but we did this offline since our CI provider is not generous enough that we could download and decompress the full logs from the contest.
 Note that Tedd had a 100% reliability score, so these values should be trustable.  
-Currently we have not yet updated these files, so these are verdicts from the 2020 edition of the contest.
+Currently these are verdicts from the 2023 edition of the contest.
 
 We have a similar project to host the files for previous years, going back to 2017,e.g. https://github.com/yanntm/pnmcc-models-2021
 These repositories are curated, consensus verdicts that are incorrect are diagnosed and patched (see the edits made in the https://github.com/yanntm/pnmcc-models-2021/blob/master/install_inputs.sh#L57 script).
