@@ -26,7 +26,7 @@ while (my $line = <STDIN>) {
   #	# in 2023 no examination in these formulas
   #	$prefix = $modelname ;
   #}
-
+  @fields[2] =~ s/[\(\)]//g;
   my @verdicts = split //, @fields[2];
 
    # print "Verdicts ($#verdicts) = @verdicts \n";
